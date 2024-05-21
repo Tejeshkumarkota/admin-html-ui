@@ -1,0 +1,37 @@
+.ioc-count {
+    background-color: #1D88FA;
+    border-radius: 50%;
+    position: absolute;
+    display: inline-flex;
+    color: #fff;
+    right: 3px;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    height: 17px;
+    width: 17px;
+}
+.nav-item.dropdown::before {
+    content: "";
+    border-left: 1px solid #ecebeb;
+    position: absolute;
+    display: inline-block;
+    height: 66px;
+    top: -15px;
+    left: -5px;
+}
+.sb-sidenav-menu .nav-link:before {
+    content: "";
+    border: 1px solid transparent;
+    position: absolute;
+    left: 4px;
+    display: inline-block;
+    height: 23px;
+    top: 13px;
+    width: 2px;
+    background-color: transparent;
+}
+.sb-sidenav-menu .nav-link.active:before {
+    border-color: #1D88FA;
+    background-color: #1D88FA;
+}

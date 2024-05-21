@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Clients</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-light bg-white shadow-sm">
+      <!-- Navbar Brand-->
+      <a class="navbar-brand ps-3 text-uppercase h2" href="clients.html"
+        >Accountant</a
+      >
+      <!-- Sidebar Toggle-->
+      <button
+        class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
+        id="sidebarToggle"
+        href="#!"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Navbar Search-->
+      <form
+        class="d-none d-md-inline-block form-inline ms-3 me-auto me-0 me-md-3 my-2 my-md-0"
+      >
+        <div class="input-group">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Search"
+            aria-label="Search for..."
+            aria-describedby="btnNavbarSearch"
+          />
+          <button
+            class="btn btn-outline-primary border"
+            id="btnNavbarSearch"
+            type="button"
+          >
+            <i class="fas fa-search text-black"></i>
+          </button>
+        </div>
+      </form>
+      <!-- Navbar-->
+      <ul class="navbar-nav ms-auto ms-md-auto me-3 me-lg-4">
+        <li class="nav-item">
+          <a class="nav-link pb-0 pb-md-2" href="/settings.html">
+            <i class="bi bi-gear-fill h4"></i>
+          </a>
+        </li>
+        <li class="nav-item pe-4 ps-2">
+          <a
+            class="nav-link pb-0 pb-md-2 position-relative"
+            href="/notifications.html"
+            ><span class="ioc-count"> 12 </span
+            ><i class="bi bi-bell-fill h4"></i
+          ></a>
+        </li>
+        <li class="nav-item dropdown ps-2">
+          <a
+            class="nav-link d-flex align-items-center dropdown-toggle"
+            id="navbarDropdown"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            ><i class="bi bi-person-circle pe-1 h4"></i> <span class="d-none d-md-flex">Sivapathacholan</span> </a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdown"
+          >
+            <li><a class="dropdown-item" href="#!">Settings</a></li>
+            <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#!">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="layoutSidenav">
+      <div id="layoutSidenav_nav">
+        <nav
+          class="sb-sidenav accordion sb-sidenav-light shadow-sm bg-white"
+          id="sidenavAccordion"
+        >
+          <div class="sb-sidenav-menu">
+            <div class="nav py-3">
+              <a class="nav-link text-uppercase fw-semibold" href="index.html">
+                <div class="sb-nav-link-icon">
+                  <i class="bi bi-speedometer2 pe-1"></i>
+                </div>
+                Dashboard
+              </a>
+              <a
+                class="nav-link text-uppercase active fw-semibold"
+                href="clients.html"
+              >
+                <div class="sb-nav-link-icon">
+                  <i class="bi bi-people-fill pe-1"></i>
+                </div>
+                My clients
+              </a>
+              <a
+                class="nav-link text-uppercase fw-semibold"
+                href="clients.html"
+              >
+                <div class="sb-nav-link-icon">
+                  <i class="bi bi-flag pe-1"></i>
+                </div>
+                Reports
+              </a>
+            </div>
+          </div>
+          <div class="sb-sidenav-footer bg-white border-top">
+            <div class="d-flex flex-column text-center">
+              <h4 class="h6 text-muted fw-normal mb-1">Powered by</h4>
+              <h2 class="text-uppercase fw-bold">Logo +</h2>
+              <p class="mb-1 h6 text-muted fw-normal">
+                Copyright &copy; 2022 FINMAN+.
+              </p>
+              <p class="h6 text-muted fw-normal">All rights reserved.</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div id="layoutSidenav_content">
+        <main>
+          <div class="container-fluid p-4">
+            <div class="row">
+              <div class="col-12 col-md-7 mb-md-4 mb-2">
+                <h2 class="fw-normal">
+                  Clients<span class="text-primary h5 fw-normal"
+                    ><sup>(6)</sup></span
+                  >
+                </h2>
+              </div>
+              <div class="col-12 col-md-5 text-md-end mb-3 mb-md-0">
+                <button type="button" class="btn btn-primary">
+                  <i class="bi bi-trash-fill"></i>
+                </button>
+                <button type="button" class="btn btn-primary mx-1">
+                  <i class="bi bi-pencil-fill"></i>
+                </button>
+                <button type="button" class="btn btn-primary">
+                  <i class="bi bi-plus-circle-fill"></i> Add Client
+                </button>
+              </div>
+              <div class="col-12">
+                <div class="card border-0">
+                  <div class="card-body p-0">
+                    <table id="datatablesSimple" class="">
+                      <thead>
+                        <tr>
+                          <th class="text-center">
+                            <div class="form-check text-center">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label class="" for="flexCheckDefault">
+                                &nbsp;
+                              </label>
+                            </div>
+                          </th>
+                          <th>Name</th>
+                          <th>Account Number</th>
+                          <th>Email</th>
+                          <th>Phone Number</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label class="" for="flexCheckDefault">
+                                &nbsp;
+                              </label>
+                            </div>
+                          </td>
+                          <td>Atmosol</td>
+                          <td>8612454121</td>
+                          <td>support@atmosol.com</td>
+                          <td>98765 43210</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label class="" for="flexCheckDefault">
+                                &nbsp;
+                              </label>
+                            </div>
+                          </td>
+                          <td>Atmosol</td>
+                          <td>8612454121</td>
+                          <td>support@atmosol.com</td>
+                          <td>98765 43210</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label class="" for="flexCheckDefault">
+                                &nbsp;
+                              </label>
+                            </div>
+                          </td>
+                          <td>Atmosol</td>
+                          <td>8612454121</td>
+                          <td>support@atmosol.com</td>
+                          <td>98765 43210</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label class="" for="flexCheckDefault">
+                                &nbsp;
+                              </label>
+                            </div>
+                          </td>
+                          <td>Atmosol</td>
+                          <td>8612454121</td>
+                          <td>support@atmosol.com</td>
+                          <td>98765 43210</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label class="" for="flexCheckDefault">
+                                &nbsp;
+                              </label>
+                            </div>
+                          </td>
+                          <td>Atmosol</td>
+                          <td>8612454121</td>
+                          <td>support@atmosol.com</td>
+                          <td>98765 43210</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer> -->
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/scripts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/datatables-simple-demo.js"></script>
+  </body>
+</html>
